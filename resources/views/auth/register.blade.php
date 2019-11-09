@@ -5,11 +5,10 @@
         <div class="col-md-5 ml-auto">
             <div class="col-md-10 text-center ml-auto mr-auto">
                 <h3 class="mb-5"><img width="100%" src="http://127.0.0.1:8000/images/delltechnologies-light.png" alt=""></h3>
-                <br>
             </div>
             <div class="info-area info-horizontal mt-5">
                 <div class="icon icon-warning">
-                    <img src="https://img.icons8.com/cotton/40/000000/artificial-intelligence.png">
+                    <img src="https://img.icons8.com/nolan/40/000000/mind-map.png">
                 </div>
                 <div class="description">
                     <h3 class="info-title">{{ __('Artificial Intelligence') }}</h3>

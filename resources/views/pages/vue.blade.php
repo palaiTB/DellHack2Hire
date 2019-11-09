@@ -1,7 +1,7 @@
-@extends('layouts.app', ['page' => __('Vue'), 'pageSlug' => 'Vue'])
+{{--@extends('layouts.app', ['page' => __('Vue'), 'pageSlug' => 'Vue'])--}}
 
-@section('content')
-    <div id="app">
-        <router-view></router-view>
-    </div>
-@endsection
+{{--@section('content')--}}
+{{--    <div class="container">--}}
+{{--        <router-view></router-view>--}}
+{{--    </div>--}}
+{{--@endsection--}}
