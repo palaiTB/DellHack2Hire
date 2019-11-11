@@ -13,10 +13,13 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter);
 
 import Home from './components/Home.vue'
+import Map from './components/Map.vue'
+import Notifications from './components/Notifications.vue'
 
 let routes = [
     {path: '/vue', component: Home},
-    // {path: '/solutions', component: Solutions},
+    {path: '/map', component: Map},
+    {path: '/notification', component: Notifications},
 ];
 let router = new VueRouter({
     mode: 'hash',

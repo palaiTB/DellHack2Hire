@@ -25,7 +25,16 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/dashboard';
+//    protected $redirectTo = '/dashboard';
+
+    protected function authenticated($request, $user)
+    {
+        if($user->user_type ==1) {
+            return redirect()->intended('/dashboard');
+        }
+
+        return redirect()->intended('/router#/vue');
+    }
 
     /**
      * Create a new controller instance.

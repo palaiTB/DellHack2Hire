@@ -17,7 +17,7 @@
 
 @push('js')
     <!-- Place this tag in your head or just before your close body tag. -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5vmep1TBNKtyZw0dwPpYzyG7QfnZEYV4"></script>
     <script>
         $(document).ready(function() {
             // Javascript method's body can be found in assets/js/demos.js

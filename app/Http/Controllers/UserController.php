@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\User;
 use App\Http\Requests\UserRequest;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
@@ -91,5 +92,18 @@ class UserController extends Controller
         $user->delete();
 
         return redirect()->route('user.index')->withStatus(__('User successfully deleted.'));
+    }
+
+    public function purchase()
+    {
+        $data = DB::table('purchase_history')->where('user_id', auth()->user()->id)->pluck('product_id');
+        $arr=[];
+        foreach($data as $key=>$value)
+        {
+            $item = DB::table('product')->where('id', $value)->get();
+            array_push($arr, $item);
+        }
+
+        return $arr;
     }
 }

@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
         <script src="{{ asset('js/app.js') }}" defer></script>
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -28,7 +30,7 @@
         <link rel="stylesheet" href="{{asset('css/scrollbar.css')}}">
         <link href="{{ asset('black') }}/css/theme.css" rel="stylesheet" />
     </head>
-    <body class="{{ $class ?? '' }}">
+    <body class="{{ $class ?? '' }} animated fadeIn faster" >
             @auth()
                 <div class="wrapper" id="app">
                     @include('layouts.navbars.sidebar')
@@ -36,7 +38,6 @@
                         @include('layouts.navbars.navbar')
 
                         <div class="content">
-                            <router-view></router-view>
                             @yield('content')
                         </div>
 

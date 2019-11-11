@@ -1,5 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif, Arial, Helvetica ;
+    overflow-x: hidden;
 }
 
 .navbar{
@@ -126,6 +127,7 @@ span{
     left: 35%;
     top: 30%;
 }
+
 
 
 
